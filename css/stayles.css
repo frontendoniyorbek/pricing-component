@@ -5,6 +5,18 @@ html{
     scroll-behavior: smooth;
 }
 
+/* FONRS */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+        url('../fonts/Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 *,
 *::before,
 *::after {
@@ -15,11 +27,12 @@ body{
     display: flex;
     flex-direction: column;
     height: 100%;
-    font-size: 16px;
-    line-height: 1.5;
-    font-family: "Arial",sans-serif;
-    background-color: #fff;
-    color: #222;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 28px;
+    font-family: "Montserrat" "Arial",sans-serif;
+    background-color: #f2f2f2;
+    color: #6e728e;
 }
 
 img{
@@ -30,9 +43,9 @@ img{
 /* CONTAINER */
 .container{
     width: 100%;
-    max-width: 1200px;
-    padding-left: 50px;
-    padding-right: 50px;
+    max-width: 1100px;
+    padding-left: 25px;
+    padding-right: 25px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -40,4 +53,23 @@ img{
 /* MAIN-CONTENT */
 .main-content{
     flex-grow: 1;
+}
+
+
+/* OUR-PRICING */
+.our-pricing {
+}
+.container {
+}
+.our-pricing-heading {
+}
+.our-pricing-change {
+}
+.our-pricing-change-annual {
+}
+.our-pricing-change-type {
+}
+.our-pricing-change-type-dynamic {
+}
+.our-pricing-change-monthly {
 }
