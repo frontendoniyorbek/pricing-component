@@ -1,3 +1,10 @@
+:root{
+    --primary-color:#6e728e;
+    --bg-color:#f2f2f2;
+    --price-color:#4a4d60;
+    --white-color:#fff;
+}
+
 /* GLOBAL */
 html{
     box-sizing: border-box;
@@ -16,7 +23,6 @@ html{
 }
 
 
-
 *,
 *::before,
 *::after {
@@ -30,14 +36,23 @@ body{
     font-weight: 700;
     font-size: 15px;
     line-height: 28px;
+    font-style: normal;
     font-family: "Montserrat" "Arial",sans-serif;
-    background-color: #f2f2f2;
-    color: #6e728e;
+    background-color: var(--bg-color);
+    color: var(--primary-color);
 }
 
 img{
     max-width: 100%;
     height: auto;
+}
+
+.our-pricing-change-type:hover{
+    opacity: 0.7;
+}
+
+.our-pricing-change-type:active{
+    opacity: 0.5;
 }
 
 /* CONTAINER */
@@ -58,18 +73,196 @@ img{
 
 /* OUR-PRICING */
 .our-pricing {
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
-.container {
-}
+
 .our-pricing-heading {
+    text-align: center;
+    font-size: 32px;
+    line-height: 39px;
+    margin-top: 0;
+    margin-bottom: 40px;
 }
+
 .our-pricing-change {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 64px;
 }
-.our-pricing-change-annual {
+
+.our-pricing-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.our-pricing-change-type {
+
+.our-pricing-form-label{
+    margin-right: 24px;
+    font-size: 15px;
+    line-height: 28px;
+    opacity: 0.5;
 }
-.our-pricing-change-type-dynamic {
+
+.our-pricing-label{
+    margin-left: 24px;
+    font-size: 15px;
+    line-height: 28px;
+    opacity: 0.5;
 }
-.our-pricing-change-monthly {
+
+.our-pricing-input{
+    width: 24px;
+    height: 24px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: center;
+    opacity: 0;
+}
+
+.our-pricing-input:checked{
+    opacity: 1;
+}
+
+
+.our-pricing-inputs{
+    display: flex;
+    align-items: center;
+    width: 56px;
+    height: 32px;
+    background: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+    border-radius: 16px;
+}
+
+/* PRICENG-ABOUT */
+.priceng-categories{
+    display: flex;
+    align-items: center;
+}
+
+.priceng-categorie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    padding: 31px;
+    margin: 0;
+    background-color: var(--white-color);
+    border-radius: 10px;
+}
+
+.priceng-categorie-wrapper{
+    padding-top: 55px;
+    padding-bottom: 55px;
+    background: linear-gradient(135.06deg, #A2A7F0 -0.05%, #696EDD 100.05%);
+    box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
+    border-radius: 10px;
+}
+
+.about-heading {
+    margin-top: 0;
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.about-list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    padding-left: 40px;
+    list-style: none;
+}
+
+.about-item{
+    display: flex;
+    align-items: center;
+}
+
+.about-type {
+    margin-right: 8px;
+    font-size: 40px;
+    line-height: 49px;
+    color: var(--price-color);
+}
+
+.about-value {
+    font-family: "Montserrat" "Arial",sans-serif;
+    color: var(--price-color);
+    font-size: 72px;
+    line-height: 71px;
+}
+
+.about-content {
+    border-bottom: 1px solid rgb(74, 77, 96, 0.25);
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.about-content-heading {
+    margin: 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-top: 1px solid rgb(74, 77, 96, 0.25);
+    font-size: 15px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.pricing-link {
+    display: inline-block;
+    text-align: center;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 1.39286px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--white-color);
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    padding: 14px 66px;
+    cursor: pointer;
+    transition: color 0.4s ease, background-color 0.4s ease, border 0.4s ease;
+}
+
+.pricing-link:hover{
+    color: var(--primary-colo);
+    background-color:var(--white-color);
+    border: 1px solid var(--primary-color);
+}
+
+.professional-heading{
+    color: var(--white-color);
+}
+
+.about-type-professional{
+    color: var(--white-color);
+}
+
+.about-value-professional{
+    color: var(--white-color);
+}
+
+.professional-content-heading{
+    color: var(--white-color);
+}
+
+.professional-link{
+    display: inline-block;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    border: transparent;
+    transition: border 0.4s ease, color 0.4s ease, background-color 0.4s ease;
+}
+
+.professional-link:hover{
+    border:var(--white-color);
+    color: var(--white-color);
+    background-color: var(--primary-color);
 }
