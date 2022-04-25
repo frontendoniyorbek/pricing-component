@@ -140,7 +140,7 @@ img{
     text-align: center;
 }
 
-.precing-swich{
+.pricing-swich{
     margin-bottom: 64px;
 }
 
@@ -162,6 +162,11 @@ img{
     background-image: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
 }
 
+.swich-input-monthly:checked ~ .swich-control .swich-circle {
+    margin-left: 24px;
+}
+
+
 .swich-circle{
     width: 24px;
     height: 24px;
@@ -180,13 +185,9 @@ img{
     cursor: pointer;
 }
 
-.swich-input-arrualy:checked ~ .swich-control .swich-control-monthly,
-.swich-input-monthly:checked ~ .swich-control .swich-control-arrualy{
+.swich-input-annualy:checked ~ .swich-control .swich-control-monthly,
+.swich-input-monthly:checked ~ .swich-control .swich-control-annualy{
     z-index: 5;
-}
-
-.swich-input-arrualy:checked ~ .swich-control .swich-circle {
-    margin-left: 24px;
 }
 
 .swich-label{
@@ -199,16 +200,16 @@ img{
     color: var(--primary-color);
 }
 
-.precing{
+.pricing{
     width: 100%;
 }
 
-.precing-inner {
+.pricing-inner {
     display: flex;
     align-items: center;
 }
 
-.precing-plan {
+.pricing-plan {
     flex-grow: 1;
     max-width: 350px;
     padding: 32px;
@@ -216,17 +217,17 @@ img{
     text-align: center;
 }
 
-.precing-plan:first-child{
+.pricing-plan:first-child{
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
-.precing-plan:last-child{
+.pricing-plan:last-child{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
-.precing-plan-best {
+.pricing-plan-best {
     padding-top: 55px;
     padding-bottom: 55px;
     border-radius: 10px;
@@ -236,14 +237,14 @@ img{
     box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
 }
 
-.precing-plan-title {
+.pricing-plan-title {
     margin-top: 0;
     margin-bottom: 24px;
     font-size: 18px;
     line-height: 28px;
 }
 
-.precing-plan-price {
+.pricing-plan-price {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -252,13 +253,13 @@ img{
     line-height: 72px;
 }
 
-.precing-plan-currency {
+.pricing-plan-currency {
     margin-right: 8px;
     font-size: 40px;
     line-height: 40px;
 }
 
-.precing-plan-features {
+.pricing-plan-features {
     padding: 0;
     margin: 0;
     margin-bottom: 32px;
@@ -266,16 +267,16 @@ img{
     list-style: none;
 }
 
-.precing-plan-best .precing-plan-features{
+.pricing-plan-best .pricing-plan-features{
     border-color: var(--price-border-color);
 }
 
-.precing-plan-feature {
+.pricing-plan-feature {
     padding: 12px;
     border-bottom: 1px solid rgb(110, 114, 142, 0.25);
 
 }
 
-.precing-plan-best .precing-plan-feature{
+.pricing-plan-best .pricing-plan-feature{
     border-color: var(--price-border-color);
 }

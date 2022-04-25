@@ -14,66 +14,66 @@
     <main class="main-content">
         <div class="page container">
             <h1 class="page-title">Our Pricing</h1>
-            <form class="precing-swich" action="https://.echo.htmlacademy.ru" method="GET">
+            <form class="pricing-swich" action="https://.echo.htmlacademy.ru" method="GET">
                 <!-- SWICH -->
                 <div class="swich">
                     <!-- SWICH RADIO -->
-                    <input class="swich-input-arrualy visually-hidden" type="radio" name="payment_priod" value="annualy" id="annualy-payment-radio">
-                    <input class="swich-input-monthly visually-hidden" type="radio" name="payment_priod" value="monthly" id="monthly-payment-radio">
+                    <input class="swich-input-annualy visually-hidden" type="radio" name="payment_priod" value="annualy" id="annualy-payment-radio">
+                    <input class="swich-input-monthly visually-hidden" type="radio" name="payment_priod" value="monthly" id="monthly-payment-radio" checked>
 
                     <label class="swich-label" for="annualy-payment-radio">Annually</label>
                     <!-- SWICH CONTROL -->
                     <div class="swich-control">
                         <div class="swich-circle"></div>
-                        <label class="swich-control-annually" for="annualy-payment-radio">Annually</label>
-                        <label class="swich-control-monthly" for="monthly-payment-radio">Monthly</label>
+                        <label class="swich-control-annually" for="annualy-payment-radio"></label>
+                        <label class="swich-control-monthly" for="monthly-payment-radio"></label>
                     </div>
 
                     <label class="swich-label" for="monthly-payment-radio">Monthly</label>
                 </div>
             </form>
 
-            <section class="precing">
+            <section class="pricing">
                 <h2 class="visually-hidden">Pricing</h2>
-                <div class="precing-inner">
-                    <section class="precing-plan">
-                        <h3 class="precing-plan-title">Basic</h3>
-                        <div class="precing-plan-price">
-                            <span class="precing-plan-currency">$</span>
-                            19.99
+                <div class="pricing-inner">
+                    <section class="pricing-plan" data-payment-annually="199.99" data-payment-monthly="19.99">
+                        <h3 class="pricing-plan-title">Basic</h3>
+                        <div class="pricing-plan-price">
+                            <span class="pricing-plan-currency">$</span>
+                            <span class="pricing-plan-value">19.99</span>
                         </div>
-                        <ul class="precing-plan-features">
-                            <li class="precing-plan-feature">500 GB Storage</li>
-                            <li class="precing-plan-feature">2 Users Allowed</li>
-                            <li class="precing-plan-feature">Send up to 3 GB</li>
+                        <ul class="pricing-plan-features">
+                            <li class="pricing-plan-feature">500 GB Storage</li>
+                            <li class="pricing-plan-feature">2 Users Allowed</li>
+                            <li class="pricing-plan-feature">Send up to 3 GB</li>
                         </ul>
                         <a class="button button-block button-primary" href="#">Learn more</a>
                     </section>
 
-                    <section class="precing-plan precing-plan-best">
-                        <h3 class="precing-plan-title">Professional</h3>
-                        <div class="precing-plan-price">
-                            <span class="precing-plan-currency">$</span>
-                            24.99
+                    <section class="pricing-plan pricing-plan-best" data-payment-annually="249.99" data-payment-monthly="24.99">
+                        <h3 class="pricing-plan-title">Professional</h3>
+                        <div class="pricing-plan-price">
+                            <span class="pricing-plan-currency">$</span>
+                            <span class="pricing-plan-value">24.99</span>
                         </div>
-                        <ul class="precing-plan-features">
-                            <li class="precing-plan-feature">1 TB Storage</li>
-                            <li class="precing-plan-feature">5 Users Allowed</li>
-                            <li class="precing-plan-feature">Send up to 10 GB</li>
+                        <ul class="pricing-plan-features">
+                            <li class="pricing-plan-feature">1 TB Storage</li>
+                            <li class="pricing-plan-feature">5 Users Allowed</li>
+                            <li class="pricing-plan-feature">Send up to 10 GB</li>
                         </ul>
                         <a class="button button-block button-white" href="#">Learn more</a>
                     </section>
 
-                    <section class="precing-plan">
-                        <h3 class="precing-plan-title">Master</h3>
-                        <div class="precing-plan-price">
-                            <span class="precing-plan-currency">$</span>
-                            39.99
+                    <section class="pricing-plan" data-payment-annually="199.99" data-payment-monthly="19.99">
+                        <h3 class="pricing-plan-title">Master</h3>
+                        <div class="pricing-plan-price">
+                            <span class="pricing-plan-currency">$</span>
+                            <span class="pricing-plan-value">39.99</span>
                         </div>
-                        <ul class="precing-plan-features">
-                            <li class="precing-plan-feature">2 TB Storage</li>
-                            <li class="precing-plan-feature">10 Users Allowed</li>
-                            <li class="precing-plan-feature">Send up to 20 GB</li>
+                        <ul class="pricing-plan-features">
+                            <li class="pricing-plan-feature">2 TB Storage</li>
+                            <li class="pricing-plan-feature">10 Users Allowed</li>
+                            <li class="pricing-plan-feature">Send up to 20 GB</li>
                         </ul>
                         <a class="button button-block button-primary" href="#">Learn more</a>
                     </section>
